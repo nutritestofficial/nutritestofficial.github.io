@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+/*-----------------------------------Divider------------------------------*/
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+    
+@media (min-width: 992px) {
+        .rounded-lg-3 { border-radius: .3rem; }
+}
+    
+/*------------------------------------Top--------------------------------*/
+.logo{
+    width: 200px;
+    height: auto;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 15px;
+    color: #878986;
+    display: inline-flex;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: white;
+    transform:translateY(-5px);
+    background-color: #5C8C50;
+}
+.social-icons a{
+    height: 50px;
+    width: 50px;
+    background-color: #F5F0EA;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.contact_top i{
+    color: #5C8C50;
+    display: inline-flex;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.contact_top span{
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #878986;
+    display: inline-flex;
+    transition: transform 0.5s;
+}
+.contact_top span:hover{
+    color: #E9DE5E;
+    transform: translateY(-5px);
+}
+/*----------------------------Navigation--------------------------*/
+.navigation-bar{
+    background-color: #F5F0EA;
+    overflow: hidden;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    border: 2px solid #5C8C50;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+nav ul li{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 10px 20px;
+    padding-left: 5rem;
+}
+
+nav ul li{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 10px 20px;
+    padding-left: 5rem;
+}
+.nav-link{
+    color: black !important;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-family: 'K2D', sans-serif;
+}
+.nav-link:hover{
+    color: #5C8C50 !important;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #E9DE5E;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+  /* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+  /* Declare heights because of positioning of img element */
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+.carousel-item{
+    height: 32rem;
+    position: relative;
+    color: white;
+}
+.carousel-caption h1{
+    font-size: 150px;
+    font-family: 'Amatic SC', cursive;
+}
+.carousel-caption p{
+    font-size: 32px;
+    font-family: 'Barlow', sans-serif;
+}
+.img-opacity{
+    opacity: 0.8;
+}
+/*-------------------------------------Services-------------------------------------*/
+.feature-icon{
+    font-size: 45px;
+}
+/*------------------------------------Products------------------------------------*/
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+  /* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+  /* rtl:end:ignore */
+
+
+
+    .container {
+        max-width: 960px;
+    }
+    
+    /*
+    * Custom translucent site header
+    */
+    
+    .site-header {
+        background-color: rgba(0, 0, 0, .85);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    .site-header a {
+        color: #999;
+        transition: ease-in-out color .15s;
+    }
+    .site-header a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    /*
+    * Dummy devices (replace them with your own or something else entirely!)
+    */
+    .bg-transparent{
+        filter: drop-shadow(5px 18px 4px #A9A9A9);
+    }
+    .image-shadow{
+        filter: drop-shadow(-1px -14px 12px #343434);
+    }
+    .image-shadow-1{
+        filter: drop-shadow(3px -13px 5px #5f5f5f);
+    }
+    .product-device {
+        position: absolute;
+        right: 10%;
+        bottom: -30%;
+        width: 300px;
+        height: 540px;
+        background-color: #333;
+        border-radius: 21px;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    
+    .product-device::before {
+        position: absolute;
+        top: 10%;
+        right: 10px;
+        bottom: 10%;
+        left: 10px;
+        content: "";
+        border-radius: 5px;
+    }
+    
+    .product-device-2 {
+        top: -25%;
+        right: auto;
+        bottom: 0;
+        left: 5%;
+        background-color: #e5e5e5;
+        -webkit-transform: rotate(210deg);
+        transform: rotate(210deg);
+    }
+.video-promotion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+    
+    /*
+    * Extra utilities
+    */
+    
+    .border-top { border-top: 1px solid #e5e5e5; }
+    .border-bottom { border-bottom: 1px solid #e5e5e5; }
+    
+    .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+    
+    .flex-equal > * {
+        -ms-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1;
+    }
+    @media (min-width: 768px) {
+        .flex-md-equal > * {
+        -ms-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1;
+        }
+    }
+    
+    .overflow-hidden { overflow: hidden; }
+    
+
+  /*---------------------------- Product Reviews------------------ */
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.2rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonial-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.reviews{
+    color: #E9DE5E;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-5px);
+    transition: all ease 0.3s;
+}
+/*------------------------------------values--------------------------------------*/
+
+#mission-vision{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #5C8C50;
+    color: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 5px 10px 8px #888888;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #E6A822;
+    transform: translateY(-10px);
+}
+.icon-core{
+    margin: 0 10px 0 0;
+}
+.fa-seedling, .fa-brain, .fa-handshake, .fa-puzzle-piece, .fa-lightbulb, .fa-dumbbell, .fa-hands-holding, .fa-user-tie, .fa-circle-check{
+    font-size: 2rem;
+    color: rgb(36, 36, 36);
+}
+/*------------------------------------Meet The tEam-------------------------------*/
+
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 20px;
+}
+.column {
+   
+    width: 20rem;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+
+  .card {
+    background-color: #F5F0EA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    margin: 10px;
+    
+  }
+ 
+
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  span {
+    font-size: 24px;
+    position: relative;
+    left: 7px;
+    margin: .2rem;
+  }
+  .center-span{
+    left: 46px;
+  }
+
+  .cb-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 3%;
+}
+.cb-text{
+    font-size: 21px;
+    font-weight: 500;
+}
+.nutritest{
+    color: #5C8C50;
+    padding-right: 5px;
+}
+/*------------------------------------Contact Info---------------------------------*/
+.contact-container{
+    background-color: #5C8C50;
+    width: 100vw;
+    height: 75vh;
+}
+.contact-container h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    color: #F5F0EA;
+    font-size: 50px;
+    letter-spacing: 7px;
+    font-family: 'Unbounded', cursive;
+    text-transform: uppercase;
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-info h4{
+    font-size: 30px;
+    color: #F5F0EA;
+    text-transform: uppercase;
+}
+
+.contact-info i{
+    color: #F5F0EA;
+    font-size: 50px;
+    padding: 1rem;
+}
+.contact-info p{
+    color: #F5F0EA;
+    font-size: 24px;
+}
+/*--------------------------------------------Contact-------------------------------------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #5C8C50;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.row-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 20px;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #5C8C50;
+    color: white;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #F5F0EA;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*------------------------------------Responsive---------------------------------*/
+
+
+
+@media screen and (max-width: 600px) {
+    div.social-icons, div.contact_top {
+        display: none;
+    }
+    .carousel-caption h1{
+        font-size: 100px;
+        font-family: 'Amatic SC', cursive;
+    }
+    div.contact-container h1, div.contact-info h4{
+        font-size: 20px;
+    }
+    div.contact-info p{
+        font-size: 14px;
+    }
+
+
+}
+@media screen and (max-width: 400px) {
+    .carousel-caption h1{
+        font-size: 50px;
+        font-family: 'Amatic SC', cursive;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+    }
+}
+
